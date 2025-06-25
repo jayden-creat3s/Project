@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './Navigate';
 import { fetchSpotifyAlbums } from './api';
 import MusicCatalog from './MusicCatalog'; 
@@ -43,14 +43,14 @@ const Index = () => {
     <Router>
       <div className="min-h-screen bg-black relative overflow-hidden">
         <Navigation />
-        <Switch>
-          <Route path="/albums">
+        <Routes>
+          <Route path="/albums" element={
             <MusicCatalog items={musicCatalog.albums} title="Albums" onPlay={handlePlay} />
-          </Route>
-          <Route path="/">
+          } />
+          <Route path="/" element={
             <h1 className="text-6xl text-white">Welcome to Lil Tecca's Catalog</h1>
-          </Route>
-        </Switch>
+          } />
+        </Routes>
       </div>
     </Router>
   );
