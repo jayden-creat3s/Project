@@ -1,0 +1,23 @@
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-darker: #070707;
+    --tecca-red: #ff2455;
+    --tecca-blue: #dc12ee;
+    --text-primary: #ffffff;
+    --text-secondary: #aaaaaa;
+    --glass: rgba(255, 255, 255, 0.05);
+    --glow: 0 0 10px rgba(255, 36, 85, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
