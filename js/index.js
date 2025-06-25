@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navigation from './Navigation';
+import Navigation from './Navigate';
 import { fetchSpotifyAlbums } from './api';
 import MusicCatalog from './MusicCatalog'; 
 import './styles.css'; 
@@ -47,7 +47,6 @@ const Index = () => {
           <Route path="/albums">
             <MusicCatalog items={musicCatalog.albums} title="Albums" onPlay={handlePlay} />
           </Route>
-        
           <Route path="/">
             <h1 className="text-6xl text-white">Welcome to Lil Tecca's Catalog</h1>
           </Route>
