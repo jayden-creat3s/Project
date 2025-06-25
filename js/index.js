@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './Navigation';
 import { fetchSpotifyAlbums } from './api';
-import MusicCatalog from './MusicCatalog'; // Assuming you have a MusicCatalog component
-import './styles.css'; // Import your styles here
+import MusicCatalog from './MusicCatalog'; 
+import './styles.css'; 
 
 const Index = () => {
   const [musicCatalog, setMusicCatalog] = useState({ albums: [], singles: [], eps: [], features: [] });
@@ -19,11 +19,11 @@ const Index = () => {
           year: new Date(album.release_date).getFullYear(),
           cover: album.images[0]?.url || 'default-cover.jpg',
           tracks: album.total_tracks,
-          streams: 'N/A', // Placeholder
+          streams: 'N/A', 
           platforms: {
             spotify: album.external_urls.spotify,
-            apple: 'https://music.apple.com', // Placeholder
-            youtube: 'https://youtube.com' // Placeholder
+            apple: 'https://music.apple.com',
+            youtube: 'https://youtube.com'
           }
         }));
         setMusicCatalog(prev => ({ ...prev, albums: formattedAlbums }));
@@ -47,7 +47,7 @@ const Index = () => {
           <Route path="/albums">
             <MusicCatalog items={musicCatalog.albums} title="Albums" onPlay={handlePlay} />
           </Route>
-          {/* Add other routes for singles, eps, and features */}
+        
           <Route path="/">
             <h1 className="text-6xl text-white">Welcome to Lil Tecca's Catalog</h1>
           </Route>
