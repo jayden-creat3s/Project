@@ -518,7 +518,7 @@ const musicCatalog = {
         {
             id: '1',
             title: 'Sorry 4 The Wait',
-            year: 2024,
+            year: 2022,
             cover: 'images/ab67616d0000b273300af6c15e091795c7997d86.jpeg',
             platforms: {
                 spotify: 'https://open.spotify.com/album/6MVsBi4m5eAzfjb6C3JKwp?si=shkg4n5hSS-GZPUK5A0WYw',
@@ -528,98 +528,269 @@ const musicCatalog = {
         },
         {
           id: '2',
-          title: 'I Know How It Feels',
-          year: 2023,
-          cover: './images/a8a6344b-940a-479c-829f-200d326befd4.jpeg',
+          title: 'All is Yellow',
+          year: 2024,
+          cover: 'images/All_Is_Yellow_Lyrical_Lemonade.jpg',
           platforms: {
-              spotify: 'https://open.spotify.com/album/0CLqdKIh14TmKqLZCs9dml?si=lGIOCLKmT_KqRSariwsVQA',
-              apple: 'https://music.apple.com/us/album/i-know-how-it-feels-single/1819101379',
-              youtube: 'https://youtu.be/1b2g4j6f7a8?si=6h4FLF50c3ooSNMt'
+              spotify: 'https://open.spotify.com/album/4NGIX0BP6xxRaGh64hhJhe?si=3amQeDm1QiC3yrh2TVDLwQ',
+              apple: 'https://music.apple.com/us/album/all-is-yellow/1719359340',
+              youtube: 'https://youtube.com/playlist?list=OLAK5uy_kNtchXC29WWiurB8YZlrHCqTsMClRzrE0&si=9Si4hz7LWOdwOZ2s'
           }
         },
         {
             id: '3',
-            title: 'Down With Me (Remix)',
-            year: 2024,
-            cover: './images/Down with me Lil Tecca.jpeg',
+            title: '29',
+            year: 2023,
+            cover: 'images/ab67616d0000b273b5406de0bad89bf6fcc3bb13.jpeg',
             platforms: {
-                spotify: 'https://open.spotify.com/album/6qXPKqlxpKnDqYYrFDKnsx?si=4kcMVX28QAeZZf51odhGDA',
-                apple: 'https://music.apple.com/us/album/down-with-me-remix-single/1724100693',
-                youtube: 'https://youtu.be/AH85mAXA-30?si=ngyhHed8Q6tsBgoP'
+                spotify: 'https://open.spotify.com/album/1mdGboH4Gfm3hXJc4H4VQh?si=xg-LI-0qSu-z7AxTZVGPDw',
+                apple: 'https://music.apple.com/us/album/29/1675582263',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_nUnKYwUuZIer18rvqLZXFTHNSgY-Cv8AA&si=MzjBOJSG9ajo2Fx3'
             }
         },
     
         {
             id: '4',
-            title: '500Ibs (Remix)',
-            year: 2023,
-            cover: 'images/500lbs.jpeg',
+            title: 'Trap Tumbado',
+            year: 2020,
+            cover: 'images/600x600bf-60.jpg',
             platforms: {
-                spotify: 'https://open.spotify.com/album/2Ro9gydgq5JWy7b22zPty9?si=DzWsiucuQq2vejEC74PRAA',
-                apple: 'https://music.apple.com/us/album/500lbs-remix-single/1697375646',
-                youtube: 'https://youtu.be/vIBFoBladhg?si=X4onw6UDhotfz0Tl'
+                spotify: 'https://open.spotify.com/album/6xO4H08B7Ps67z9wuPExZb?si=B7kw1NMnSbuR0YsVkcWrKA',
+                apple: 'https://music.apple.com/us/album/trap-tumbado/1519956597',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_l1yOTraV4Mi9ap5PVUrxADtzNMVqSsIMI&si=7aVAcPdfhhD2tH6s'
             }
         },
         {
             id: '5',
-            title: 'Need Me (Remix)',
+            title: 'Evolution',
             year: 2023,     
-            cover: 'images/0x1900-000000-80-0-0.jpg',
+            cover: 'images/ab67616d0000b273e2517151b022544a720e0b6e.jpeg',
             platforms: {
-                spotify: 'https://open.spotify.com/album/453LC2RXr0Yv6M86esUdqm?si=mFGh7HabQL-FVUg52gWW9A',
-                apple: 'https://music.apple.com/us/album/need-me-remix-single/1686222606',
-                youtube: 'https://youtu.be/3K8jxMQXNoE?si=_iMDAct5yRxJC8Cj'
+                spotify: 'https://open.spotify.com/album/0YPBdNZyGlXr69hiCAJO5m?si=lBK3VwgiTpGDsntiq3ct5A',
+                apple: 'https://music.apple.com/us/album/evolution/1711399273',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_lHUQYGofQZNxXku7fB-L5waiERfYX77Dg&si=iE_MB5JWPzaqMNPD'
         }
         },
         {
             id: '6',
-            title: 'Poppin (Remix)',
-            year: 2023,
-            cover: 'images/4feae89a-d75a-4df0-9679-206b28db4086.jpeg',
+            title: 'Proud Of Myself',
+            year: 2024,
+            cover: 'images/ab67616d0000b273e650e5c41cea794bbcd835e6.jpeg',
             platforms: {
-                spotify: 'https://open.spotify.com/album/20CzPRH6ew2WOHhTO4fiFK?si=ZQP36laHR6CY3xVuyuY01w',
-                apple: 'https://music.apple.com/us/album/poppin-remix-single/1711604999',
-                youtube: 'https://youtu.be/gFOUNmy_msU?si=ITyVbhAUMlj-B5IU'
+                spotify: 'https://open.spotify.com/album/0wEkiIBzTdP3BWpq0YhUYP?si=aTzDASDyRAWIMKT8YGJHAw',
+                apple: 'https://music.apple.com/us/album/proud-of-myself/1780388701',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_kBvutKfXKXW32xWId99mqMWpy1snZtRag&si=AIM6oy6SbNgP2Qyj'
             }
         },
         {
             id: '7',
-            title: 'Blessing (Remix)',
-            year: 2024, 
-            cover: 'images/Blessing- lil tecca single.jpeg',
+            title: 'B4 the Storm',
+            year: 2020, 
+            cover: 'images/ab67616d0000b273c4adc981dc6656e52c916088.jpeg',
             platforms: {
-                spotify: 'https://open.spotify.com/album/7hjZI0A6hrUjbZFZsnVGlT?si=lQhXg1dDSraPZpelsNuYow',
-                apple: 'https://music.apple.com/us/album/bl essing-remix-single/1657472093',
-                youtube: 'https://youtu.be/w7eSNJUl8z0?si=uvaBjmfiUpY1jhI_'
+                spotify: 'https://open.spotify.com/album/4Y5lQYgpDrkyru90jltD5a?si=XsYetthhSwG4uEBbJixcdg',
+                apple: 'https://music.apple.com/us/album/b4-the-storm/1711561009',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_kxAyzqGr-dh3NoJdsfjcvHUGoJwhfws8M&si=-n_7VTxTfhfeQy-r'
             }
         },
         {
             id: '8',
-            title: 'Treesha (Remix)',
-            year: 2022,
-            cover: 'images/c42652b5-f334-4ad6-9745-08018e1e0b2.jpeg'
+            title: 'A Love Letter To You 4 (Deluxe)',
+            year: 2020,
+            cover: 'images/ab67616d0000b2737dabe2ba7ddb12120c3d89c4.jpeg',
             platforms: {
-                spotify: 'https://open.spotify.com/album/2AvGq63YVyGVyU0YqMecCy?si=DzJB-xGFQ-ajCfpPYh5QZw',
-                apple: 'https://music.apple.com/us/album/tre    esha-remix-single/1639547641',
-                youtube: 'https://youtu.be/LHXwEeiquuI?si=oGb5CEHlURL0J6az'
+                spotify: 'https://open.spotify.com/album/6Qb3toNhi0XwcZG43ksJX9?si=_KLFoKJlS6WS86996FCqlA',
+                apple: 'https://music.apple.com/us/album/a-love-letter-to-you-4-deluxe/1711658864',
+                youtube: 'https://www.youtube.com/playlist?list=PL9tY0BWXOZFupjJYr2n0DWld2hvzXtt6m'
             }
         },
         {
             id: '9',
-            title: 'Prada (Remix)',
-            year: 2021,
-            cover: 'images/24kGoldn_&_Lil_Tecca_-_Pr ada.jpg',
+            title: 'El Dorado (Deluxe)',
+            year: 2022,
+            cover: 'images/24kGoldn_-_El_Dorado.png',
             platforms: {
-                spotify: 'https://open.spotify.com/album/2ut84dwAs20nDuTqnvKsDQ?si=KSp2ZdNbQBu0D0dtiOWoKQ',
-                apple: 'https://music.apple.com/us/album/prada-remix-single/1645407524',
-                youtube: 'https://youtu.be/Jt8wiglaESg?si=oDkBD4quQAbvFTSS'
+                spotify: 'https://open.spotify.com/album/0g0nbeL6Yje5Loh78IyVls?si=mTYCH2FgQYGSdZ8Umg158w',
+                apple: 'https://music.apple.com/us/album/el-dorado-deluxe/1721057627',
+                youtube: 'https://www.youtube.com/playlist?list=PLxA687tYuMWhwUDVBCPkUWr1Zk70aACjB'
             }
         },
         {
             id: '10',
-            title: 'REPEAT IT (Remix)',
+            title: 'A Love Lettter To You 4 (5 Year Anniversary)',
+            year: 2024,
+            cover: 'images/1200x630bf-60.jpg',
+            platforms: {
+                spotify: 'https://open.spotify.com/album/1FxK884UiwzUnTsiKXYkCX?si=ujVK7e2_Sv-R_Yz1oX6n1A',
+                apple: 'https://music.apple.com/gb/album/a-love-letter-to-you-4-5-year-anniversary/1780519226',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_kUCbQPct99V7T7QHXxGQpXgvHA_NebL5c&si=UqkgjjBnwIQP6c3r'
+            }
+        },
+        {
+            id: '11',
+            title: 'About Last Night...',
+            year: 2022,
+            cover: 'images/1200x630bb.jpg',
+            platforms: {
+                spotify: 'https://open.spotify.com/album/2DX0Tyq5e8CtsoncXWEWPm?si=dUyUN1o0RBG7xUW8lZhT_Q',
+                apple: 'https://music.apple.com/us/album/about-last-night-apple-music-edition/1625913181',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_nIJ9nnCchY6DuT9iQmTmgx74UO1tstwXY&si=elB7nNf1Z8uFarOl'
+            }
+        },
+        {
+            id: '12',
+            title: 'Dark Nights In Paradise',
             year: 2021,
-            cover: 'images/_.jpeg',
+            cover: 'images/2cbf74bb3ae1d1ab605341139fb6d714.1000x1000x1.png',
+            platforms: {
+                spotify: 'https://open.spotify.com/album/6Asp5RmuNrzIuj2USqpi8V?si=YkE8q8uESh-N8snYF4FL0A',
+                apple: 'https://music.apple.com/us/album/dark-nights-in-paradise/1714378483',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_l4LYCmt-ZR-JzwIhyvH3y62ss9CfgVVr8&si=YSGbdn2VwamlkO8W'
+            }
+        },
+        {
+          id: '13',
+          title: 'Ascension (Deluxe)-Virtual World 2',
+          year: 2021,
+          cover: 'images/0x1900-000000-80-0-0 (5).jpg',
+          platforms: {
+              spotify: 'https://open.spotify.com/album/1s79D8PDeLsbpj7EYDzMBI?si=50xOJkxRT2KRY4pvYB2a2A',
+              apple: 'https://music.apple.com/us/album/ascension-deluxe-virtual-world-2/1636540216',
+              youtube: 'https://youtube.com/playlist?list=OLAK5uy_kZrTgHyApyJGh_uX3pTLDEZlgKbVxuldY&si=SzZhKNAaexDEE2L2'
+          }
+        },
+        {
+          id: '14',
+          title: 'Back2Lyfe',
+          year: 2021,
+          cover: 'images/ab67616d0000b273ca4679d369a222e80f970e27.jpeg',
+          platforms: {
+              spotify: 'https://open.spotify.com/album/1ReW4ETxA99F6gxzjjhnLS?si=gSV2oXnPT3uyp9yMeH5Pjg',
+              apple: 'https://music.apple.com/us/album/back2lyfe/1562754428',
+              youtube: 'https://youtube.com/playlist?list=OLAK5uy_lfKEc6-pzlWrW8MuJHV32Hb5SyZtcm0KI&si=8YlLYpY_XqVyx8Bj'
+          }
+        },
+        {
+            id: '15',
+            title: 'Trendsetter',
+            year: 2022,
+            cover: 'images/1200x630bf-60 (1).jpg',
+            platforms: {
+                spotify: 'https://open.spotify.com/album/5diRNQUhdOVkGo8TbWnMIx?si=wKbVZsJbRDqc5CNdThp60A',
+                apple: 'https://music.apple.com/us/album/trendsetter/1617714439',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_nis9jCJCHG9pSoFioXthnS3FwIU1QnwWE&si=aX9apZy5tKCCOUlJ'
+            }
+        },
+        {
+            id: '16',
+            title: 'B4 The Storm(Complete Edition',
+            year: 2020,
+            cover: 'images/ab67616d0000b273c4adc981dc6656e52c916088.jpeg',
+            platforms: {
+                spotify: 'https://open.spotify.com/album/2cuuNWKpPlHpBTJTX4f2pg?si=1__dmMd5T8u3I8hy1GcBPQ',
+                apple: 'https://music.apple.com/us/album/b4-the-storm-expanded-edition/1711561584',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_kxAyzqGr-dh3NoJdsfjcvHUGoJwhfws8M&si=hI1FF1JZ_HLqv2sh'
+            }
+        },
+        {
+            id: '17',
+            title: 'Diva',
+            year: 2020,
+            cover: 'images/61rRZvHI-RL._AC_UF894,1000_QL80_.jpg',
+            platforms: {
+                spotify: 'https://open.spotify.com/track/7gVwgc8b3XnO87TpmXXFA5?si=0c366f05730c4ae6',
+                apple: 'https://music.apple.com/us/album/diva-feat-lil-tecca-single/1496390488',
+                youtube: 'https://youtu.be/DFSG-ID9O2Q?si=vgt9M4n7Gy5MgDoa'
+            }
+        },
+        {
+          id: '18',
+          title: 'Memories in my Mind',
+          year: 2019,
+          cover: 'images/6729b860f4f8e4a5297d4273d47ca09f.300x300x1.jpg',
+          platforms: {
+              spotify: 'https://open.spotify.com/track/6OJjVFQK1ftkrLVP5VW7GA?si=3329b567010740e3',
+              apple: 'https://music.apple.com/us/album/memories-in-my-head-feat-lougotcash-lil-tecca-single/1456158462',
+              youtube: 'https://youtu.be/bewmZJsBkBQ?si=U3QP4B2Ka7Y-msLg'
+          }
+        },
+        {
+          id: '19',
+          title: 'BIRTHDAY MIX 6',
+          year: 2021,
+          cover: 'images/600x600bf-60 (1).jpg',
+          platforms: {
+              spotify: 'https://open.spotify.com/album/33nkEur8beeeEcTA4nxapX?si=pP2iNqJHThGG_hhDe7uDSQ',
+              apple: 'https://music.apple.com/us/album/birthday-mix-6/1582054397',
+              youtube: 'https://youtube.com/playlist?list=OLAK5uy_lRrzTqYRfhZcFB60aEiEduhYLZskSBIPE&si=MDYC0lVZL-UGa-vK'
+          }
+        },
+        {
+          id: '20',
+          title: 'Rover',
+          year: 2022,
+          cover: 'images/1900x1900-000000-80-0-0 (2).jpg',
+          platforms: {
+              spotify: 'https://open.spotify.com/track/6E6RS1uUDxxYiWMmEKrxnh?si=db83b9aaf6734091',
+              apple: 'https://music.apple.com/us/album/rover-feat-lil-tecca-single/1518238286',
+              youtube: 'https://youtu.be/X0P8Wn8TzEA?si=NwDrMrnuVEqcwYYR'
+          }
+        },
+        {
+            id: '21',
+            title: 'We All We Got',
+            year: 2022,
+            cover: 'images/ab67616d0000b273d1757a5e3c5a0e655a499483.jpeg',
+            platforms: {
+                spotify: 'https://open.spotify.com/album/31hrkRJ8ynJJOeZ0ao8FdJ?si=4itsrTAQTLmyirZceuEAYw',
+                apple: 'https://music.apple.com/us/album/we-all-we-got-ep/1711525612',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_mNhDTsWNJVS_CJWr9R6fvO7E0yeKzhUnw&si=Gr2a_BZC4H3mPDl0'
+            }
+        },
+        {
+            id: '22',
+            title: 'Dont Sleep While Its Lit- Part 2',
+            year: 2024,
+            cover: 'images/600x600bf-60 (2).jpg',
+            platforms: {
+                spotify: 'https://open.spotify.com/album/74GSr6z0zXI0LAsgsHyeWs?si=HfsdxUeLS7SnkUtXMXryvw',
+                apple: 'https://music.apple.com/us/album/dont-sleep-while-its-lit-part-2-single/1779600970',
+                youtube: 'https://youtube.com/playlist?list=OLAK5uy_lf2Z0MY9sp9M5rfTKqStd51y0i1yEF-xk&si=HNIFdIySYG0VDBjA'
+            }
+        },
+        {
+            id: '23',
+            title: 'Cant Deny',
+            year: 2020, 
+            cover: 'images/artworks-VRQ3He6L3OCk-0-t500x500.jpg',
+            platforms: {
+                spotify: 'https://open.spotify.com/track/3Hh1dMv74AXl5MxLvTkz8k?si=6085bcb0ab514657',
+                apple: 'https://music.apple.com/us/album/cant-deny-feat-lil-tecca-single/1502758869',
+                youtube: 'https://youtu.be/NaauVZfJbs0?si=hpgyT_JJQ19gOg6H'
+            }
+        },
+        {
+          id: '24',
+          title: 'Head Doctor',
+            year: 2023,
+            cover: 'images/artworks-LtEwTzWMKOnU-0-t500x500.jpg',
+            platforms: {
+                spotify: 'https://open.spotify.com/track/2DcmnusqpMEEVTXQRNhuHc?si=41f7c988bdcb4e70',
+                apple: 'https://music.apple.com/us/album/head-doctor-with-lil-tecca-single/1715743032',
+                youtube: 'https://youtu.be/s2l481raiiM?si=n0uc0twqQaUhh9Ja'
+            }
+        },
+        {
+            id: '25',
+            title:'Every Week',
+            year: 2019,
+            cover: 'images/artworks-000515237895-m5twr6-t500x500.jpg',
+            platforms: {
+                spotify: 'https://open.spotify.com/track/6mbC4spYkphdL4Q9lpEJLt?si=20e3fef028324c5f',
+                apple: 'https://music.apple.com/us/album/every-week-remix-feat-lil-tecca-single/1490164890',
+                youtube: 'https://youtu.be/coEo5KRixKM?si=kxYJ__0knxmgDYsg'
+            }
+        },
     ]
 };
 
