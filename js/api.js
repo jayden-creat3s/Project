@@ -1,5 +1,5 @@
-let cachedToken = null;
-let tokenExpiration = null;
+let cachedToken = "BQCIP3nKZ2PEB82ZbXVJrvkZ6EihjzuReYjY4lzFmk164kUBb7LFRqcWzSuYqWS5Mr8q_bMRm6BXftxvRm8ZDoSf2aoMhNvJXe_LxPLGkqeSUZ0LUT5OEzvF52UdKww9QY3YW2_t0_E";
+let tokenExpiration = Date.now() + (3600 * 1000); 
 
 async function getSpotifyToken(clientId, clientSecret) {
   if (cachedToken && tokenExpiration > Date.now()) {
