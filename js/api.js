@@ -52,5 +52,5 @@ async function fetchArtistData(artistId) {
   }
 }
 
-const artistId = '4Ga1P7PMIsmqEZqhYZQgDo'; // Just the artist ID
+const artistId = '4Ga1P7PMIsmqEZqhYZQgDo';
 fetchArtistData(artistId);
