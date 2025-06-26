@@ -50,7 +50,5 @@ const [activeLink, setActiveLink] = useState('home');
         </Link>
       </div>
     </nav>
-  );
-};
-
+  );;
 export default Navigation;
