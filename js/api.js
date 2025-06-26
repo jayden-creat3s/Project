@@ -1,31 +1,7 @@
-require('dotenv').config();
-const express = require('express');
-const fetch = require('node-fetch');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const rateLimit = require('express-rate-limit');
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-const spotifyConfig = {
-  clientId: process.env.SPOTIFY_CLIENT_ID,
-  clientSecret: process.env.SPOTIFY_CLIENT_SECRET
-};
-
-app.use(bodyParser.json());
-app.use(cors());
-
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, 
-  max: 100 
-});
-app.use(limiter);
-
 let cachedToken = null;
 let tokenExpiration = null;
 
-async function getSpotifyToken() {
+async function getSpotifyToken(clientId, clientSecret) {
   if (cachedToken && tokenExpiration > Date.now()) {
     return cachedToken;
   }
@@ -34,12 +10,14 @@ async function getSpotifyToken() {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': 'Basic ' + Buffer.from(`${spotifyConfig.clientId}:${spotifyConfig.clientSecret}`).toString('base64')
+      'Authorization': 'Basic ' + btoa(`${clientId}:${clientSecret}`)
     },
     body: 'grant_type=client_credentials'
   });
 
   if (!response.ok) {
+    const errorData = await response.text();
+    console.error('Error fetching token:', errorData);
     throw new Error('Failed to fetch token');
   }
 
@@ -49,10 +27,12 @@ async function getSpotifyToken() {
   return cachedToken;
 }
 
-app.get('/api/albums/:artistId', async (req, res) => {
-  const artistId = req.params.artistId;
+const clientId = 'b2da5dd90e714ca78b15f8cc011b118e';
+const clientSecret = 'ae3f225d680d4271b4db1dcaf24e4dbd';
+
+async function fetchArtistData(artistId) {
   try {
-    const token = await getSpotifyToken();
+    const token = await getSpotifyToken(clientId, clientSecret);
     const response = await fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
       headers: {
         'Authorization': `Bearer ${token}`
@@ -60,17 +40,17 @@ app.get('/api/albums/:artistId', async (req, res) => {
     });
 
     if (!response.ok) {
-      return res.status(response.status).send('Network response was not ok');
+      const errorData = await response.text();
+      console.error('Error fetching artist data:', errorData);
+      throw new Error('Failed to fetch artist data');
     }
 
     const data = await response.json();
-    res.json(data.items);
+    console.log('Artist Data:', data);
   } catch (error) {
-    console.error('Error fetching albums:', error);
-    res.status(500).send('Internal Server Error');
+    console.error('Error:', error);
   }
-});
+}
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+const artistId = '4Ga1P7PMIsmqEZqhYZQgDo'; // Just the artist ID
+fetchArtistData(artistId);
