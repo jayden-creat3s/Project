@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './Navigate';
 import { fetchSpotifyAlbums } from './api';
-import MusicCatalog from './MusicCatalog'; 
+import MusicCatalog from './MusicCatalog';
+import MusicCard from './MusicCard'; 
 import './styles.css'; 
 
 const Index = () => {
   const [musicCatalog, setMusicCatalog] = useState({ albums: [], singles: [], eps: [], features: [] });
-  
+
   useEffect(() => {
     const loadSpotifyAlbums = async () => {
       try {
@@ -19,7 +20,7 @@ const Index = () => {
           year: new Date(album.release_date).getFullYear(),
           cover: album.images[0]?.url || 'default-cover.jpg',
           tracks: album.total_tracks,
-          streams: 'N/A', 
+          streams: 'N/A',
           platforms: {
             spotify: album.external_urls.spotify,
             apple: 'https://music.apple.com',

@@ -116,11 +116,16 @@
 
 .info {
     padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0 0 10px 10px;
+    color: var(--text-primary);  
 }
 
 .info h3 {
     margin: 0 0 0.5rem;
     font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--tecca-red);
 }
 
 .info p {
