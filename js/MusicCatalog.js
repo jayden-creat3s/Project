@@ -793,13 +793,10 @@ const musicCatalog = {
         },
     ]
 };
-
-  
-
 const renderAlbums = () => {
     const albumList = document.getElementById('album-list');
     if (!albumList) return;
-    albumList.innerHTML = ''; // Clear previous content if any
+    albumList.innerHTML = '';
     musicCatalog.albums.forEach(album => {
         const albumCard = document.createElement('div');
         albumCard.className = 'music-card';
@@ -811,9 +808,9 @@ const renderAlbums = () => {
                 <h3>${album.title}</h3>
                 <p>${album.year} • ${album.tracks} Tracks</p>
                 <div class="platforms">
-                    <a href="${album.platforms.spotify}" target="_blank">Listen on Spotify</a>
-                    <a href="${album.platforms.apple}" target="_blank">Listen on Apple Music</a>
-                    <a href="${album.platforms.youtube}" target="_blank">Watch on YouTube</a>
+                    <button class="button" onclick="window.open('${album.platforms.spotify}', '_blank')">Listen on Spotify</button>
+                    <button class="button" onclick="window.open('${album.platforms.apple}', '_blank')">Listen on Apple Music</button>
+                    <button class="button" onclick="window.open('${album.platforms.youtube}', '_blank')">Watch on YouTube</button>
                 </div>
             </div>
         `;
@@ -824,7 +821,7 @@ const renderAlbums = () => {
 const renderSingles = () => {
     const singleList = document.getElementById('single-list');
     if (!singleList) return;
-    singleList.innerHTML = ''; // Clear previous content if any
+    singleList.innerHTML = '';
     musicCatalog.singles.forEach(single => {
         const singleCard = document.createElement('div');
         singleCard.className = 'music-card';
@@ -836,20 +833,20 @@ const renderSingles = () => {
                 <h3>${single.title}</h3>
                 <p>${single.year}</p>
                 <div class="platforms">
-                    <a href="${single.platforms.spotify}" target="_blank">Listen on Spotify</a>
-                    <a href="${single.platforms.apple}" target="_blank">Listen on Apple Music</a>
-                    <a href="${single.platforms.youtube}" target="_blank">Watch on YouTube</a>
+                    <button class="button" onclick="window.open('${single.platforms.spotify}', '_blank')">Listen on Spotify</button>
+                    <button class="button" onclick="window.open('${single.platforms.apple}', '_blank')">Listen on Apple Music</button>
+                    <button class="button" onclick="window.open('${single.platforms.youtube}', '_blank')">Watch on YouTube</button>
                 </div>
             </div>
         `;
         singleList.appendChild(singleCard);
     });
-    document.addEventListener('DOMContentLoaded', renderSingles);
 };
+
 const renderEPs = () => {
     const epList = document.getElementById('ep-list');
     if (!epList) return;
-    epList.innerHTML = ''; // Clear previous content if any
+    epList.innerHTML = '';
     musicCatalog.eps.forEach(ep => {
         const epCard = document.createElement('div');
         epCard.className = 'music-card';
@@ -861,19 +858,20 @@ const renderEPs = () => {
                 <h3>${ep.title}</h3>
                 <p>${ep.year} • ${ep.tracks} Tracks</p>
                 <div class="platforms">
-                    <a href="${ep.platforms.spotify}" target="_blank">Listen on Spotify</a>
-                    <a href="${ep.platforms.apple}" target="_blank">Listen on Apple Music</a>
-                    <a href="${ep.platforms.youtube}" target="_blank">Watch on YouTube</a>
+                    <button class="button" onclick="window.open('${ep.platforms.spotify}', '_blank')">Listen on Spotify</button>
+                    <button class="button" onclick="window.open('${ep.platforms.apple}', '_blank')">Listen on Apple Music</button>
+                    <button class="button" onclick="window.open('${ep.platforms.youtube}', '_blank')">Watch on YouTube</button>
                 </div>
             </div>
         `;
         epList.appendChild(epCard);
     });
 };
+
 const renderFeatures = () => {
     const featureList = document.getElementById('feature-list');
     if (!featureList) return;
-    featureList.innerHTML = ''; // Clear previous content if any
+    featureList.innerHTML = '';
     musicCatalog.features.forEach(feature => {
         const featureCard = document.createElement('div');
         featureCard.className = 'music-card';
@@ -885,19 +883,20 @@ const renderFeatures = () => {
                 <h3>${feature.title}</h3>
                 <p>${feature.year}</p>
                 <div class="platforms">
-                    <a href="${feature.platforms.spotify}" target="_blank">Listen on Spotify</a>
-                    <a href="${feature.platforms.apple}" target="_blank">Listen on Apple Music</a>
-                    <a href="${feature.platforms.youtube}" target="_blank">Watch on YouTube</a>
+                    <button class="button" onclick="window.open('${feature.platforms.spotify}', '_blank')">Listen on Spotify</button>
+                    <button class="button" onclick="window.open('${feature.platforms.apple}', '_blank')">Listen on Apple Music</button>
+                    <button class="button" onclick="window.open('${feature.platforms.youtube}', '_blank')">Watch on YouTube</button>
                 </div>
             </div>
         `;
         featureList.appendChild(featureCard);
     });
 };
-document.addEventListener('DOMContentLoaded', () => {
-    renderEPs(); 
-});
-document.addEventListener('DOMContentLoaded', renderSingles);
 
-document.addEventListener('DOMContentLoaded', renderAlbums);
-document.addEventListener('DOMContentLoaded', renderFeatures);
+document.addEventListener('DOMContentLoaded', () => {
+    renderAlbums();
+    renderSingles();
+    renderEPs();
+    renderFeatures();
+});
+

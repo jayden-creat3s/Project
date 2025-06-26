@@ -8,7 +8,21 @@
     --glass: rgba(255, 255, 255, 0.05);
     --glow: 0 0 10px rgba(255, 36, 85, 0.5);
 }
-
+.futuristic-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: #0ff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            letter-spacing: 1px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 30px auto;
+            position: relative;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 10px;
+            border: 1px solid rgba(0,255,255,0.2);
+        }
 * {
     margin: 0;
     padding: 0;
@@ -20,4 +34,59 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
     min-height: 100vh;
+}
+
+.platforms {
+    display:inline-block;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #7873f5, #ff6ec4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.button:focus {
+    outline: none;
 }
